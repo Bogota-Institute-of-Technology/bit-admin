@@ -9,6 +9,7 @@ app.use(bodyParser.json())
 connectToDB()
 
 require('./routes/course')(app)
+require('./routes/user')(app)
 
 app.listen(3000, () => {
     console.log('Nos conectamos')
