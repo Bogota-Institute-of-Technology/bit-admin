@@ -10,6 +10,7 @@ connectToDB()
 
 require('./routes/course')(app)
 require('./routes/user')(app)
+require('./routes/role')(app)
 
 app.listen(3000, () => {
     console.log('Nos conectamos')
